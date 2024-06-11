@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactive Email Elements</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        padding: 20px;
+      }
+      .header,
+      .footer {
+        background-color: #009688;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+      }
+      .content {
+        padding: 20px;
+      }
+      .button {
+        background-color: #009688;
+        color: #ffffff;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+      }
+      .form-container {
+        margin: 20px 0;
+      }
+      .form-container label {
+        display: block;
+        margin: 5px 0 5px;
+      }
+      .form-container input,
+      .form-container select {
+        width: 100%;
+        padding: 8px;
+        margin-bottom: 10px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="header">
+            <h1>Interactive Elements in Emails</h1>
+          </td>
+        </tr>
+        <tr>
+          <td class="content">
+            <h2>Adding Buttons and CTAs</h2>
+            <p>Encourage user actions with clear and compelling buttons.</p>
+            <a href="https://example.com" class="button">Buy Now</a>
+            <h2>Using Forms in Emails</h2>
+            <p>Collect user data directly within the email.</p>
+            <div class="form-container">
+              <form action="https://example.com/submit" method="post">
+                <label for="first-name">First Name:</label>
+                <input type="text" id="first-name" name="first-name" required />
+
+                <label for="last-name">Last Name:</label>
+                <input type="text" id="last-name" name="last-name" required />
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" />
+
+                <label for="preference">Contact Preference:</label>
+                <select id="preference" name="preference" required>
+                  <option value="email">Email</option>
+                  <option value="phone">Phone</option>
+                  <option value="sms">SMS</option>
+                </select>
+
+                <button type="submit" class="button">Submit</button>
+              </form>
+            </div>
+            <h2>Incorporating GIFs and Animations</h2>
+            <p>Enhance your emails with eye-catching animations.</p>
+            <img
+              src="https://mir-s3-cdn-cf.behance.net/project_modules/max_1200/d04a9172772859.5ca654491b145.gif"
+              alt="Exciting Offer"
+              style="max-width: 100%; height: auto"
+            />
+          </td>
+        </tr>
+        <tr>
+          <td class="footer">
+            <p>
+              You're receiving this email because you subscribed to our updates.
+            </p>
+            <p>
+              <a href="https://example.com/unsubscribe" style="color: #ffffff"
+                >Unsubscribe</a
+              >
+              |
+              <a href="https://example.com/privacy" style="color: #ffffff"
+                >Privacy Policy</a
+              >
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

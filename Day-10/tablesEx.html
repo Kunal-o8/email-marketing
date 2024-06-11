@@ -1,0 +1,152 @@
+<!-- You are an email marketer at Travel Essentials Co.. Your task is to create a promotional email highlighting three product categories:
+Luggage, Accessories, and Travel Kits.
+The email should be engaging and drive customers to visit product pages.
+
+Tasks List
+Set Up Email Structure:
+
+Basic HTML structure.
+Main container for content.
+Design Header:
+
+Add a header with a background color and centered text.
+Include company name "Travel Essentials Co."
+Content Section:
+
+Introductory paragraph.
+Three-column layout for product categories: Luggage, Accessories, and Travel Kits.
+Product Columns:
+
+Each column: heading, description, call-to-action button linking to product page.
+Design Footer:
+
+Footer with background color and centered text.
+"Unsubscribe" and "Privacy Policy" links.
+Style the Email:
+
+Apply CSS for styling.
+Ensure responsive layout. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Email Layout Exercise</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 20px;
+      }
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border: 1px solid #ddd;
+        padding: 20px;
+      }
+      .header,
+      .footer {
+        background-color: #3f51b5;
+        color: #ffffff;
+        text-align: center;
+        padding: 10px;
+      }
+      .content {
+        padding: 20px;
+      }
+      .three-column {
+        width: 100%;
+      }
+      .three-column td {
+        vertical-align: top;
+        padding: 10px;
+      }
+      .three-column .column {
+        width: 33.33%;
+      }
+      .button {
+        background-color: #3f51b5;
+        color: #ffffff;
+        padding: 10px 15px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <table width="100%" cellspacing="0" cellpadding="0">
+        <tr>
+          <td class="header">
+            <h1>Travel Essentials Co.</h1>
+          </td>
+        </tr>
+        <tr>
+          <td class="content">
+            <p>
+              Discover our exclusive range of travel essentials. Perfect for
+              your next trip.
+            </p>
+            <table class="three-column" cellspacing="0" cellpadding="0">
+              <tr>
+                <td class="column">
+                  <h2>Luggage</h2>
+                  <p>Find the perfect luggage for your travels.</p>
+                  <a
+                    href="https://www.travelessentialsco.com/shop/luggage"
+                    class="button"
+                    >Shop Luggage</a
+                  >
+                </td>
+                <td class="column">
+                  <h2>Accessories</h2>
+                  <p>Travel accessories to make your journey smoother.</p>
+                  <a
+                    href="https://www.travelessentialsco.com/shop/accessories"
+                    class="button"
+                    >Shop Accessories</a
+                  >
+                </td>
+                <td class="column">
+                  <h2>Travel Kits</h2>
+                  <p>Complete travel kits for all your needs.</p>
+                  <a
+                    href="https://www.travelessentialsco.com/shop/kits"
+                    class="button"
+                    >Shop Travel Kits</a
+                  >
+                </td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+        <tr>
+          <td class="footer">
+            <p>
+              You're receiving this email because you subscribed to Travel
+              Essentials Co. updates.
+            </p>
+            <p>
+              <a
+                href="https://www.travelessentialsco.com/unsubscribe"
+                style="color: #ffffff"
+                >Unsubscribe</a
+              >
+              |
+              <a
+                href="https://www.travelessentialsco.com/privacy"
+                style="color: #ffffff"
+                >Privacy Policy</a
+              >
+            </p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
