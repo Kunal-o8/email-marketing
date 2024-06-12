@@ -1,0 +1,177 @@
+<!-- You are part of the marketing team at HealthyLiving, a wellness company dedicated to promoting healthy lifestyles. 
+ Your team is launching a new monthly newsletter aimed at providing subscribers with valuable health tips, articles,
+and exclusive promotions. As part of this initiative, you've been tasked with creating an engaging and accessible email template
+for the inaugural edition of the newsletter.
+
+Tasks:
+
+Create a Compelling Header: Design a header that prominently displays the newsletter name and brand identity
+to grab the reader's attention.
+
+Feature Article: Highlight a key article from the newsletter, showcasing its relevance and encouraging readers to engage with 
+the content.
+
+Subscription Form: Include a user-friendly subscription form allowing readers to sign up for the newsletter directly from the email.
+
+Special Offer: Promote a special offer or discount to incentivize new subscribers and drive engagement.
+
+Accessibility Considerations: Ensure that all elements of the email are accessible to users with disabilities, 
+including proper use of semantic HTML and ARIA labels for screen readers. -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accessible Email for Health Newsletter</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-color: #f7f7f7;
+        margin: 0;
+        padding: 20px;
+      }
+      .email-container {
+        width: 100%;
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        border-radius: 8px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+      .header,
+      .footer {
+        background-color: #5d84ac;
+        color: #ffffff;
+        text-align: center;
+        padding: 20px 0;
+      }
+      .header h1,
+      .footer p {
+        margin: 0;
+      }
+      .content {
+        padding: 30px;
+        text-align: center;
+      }
+      h2 {
+        color: #2c3e50;
+        font-size: 24px;
+        margin-top: 30px;
+      }
+      p {
+        color: #444444;
+        font-size: 16px;
+        line-height: 1.6;
+      }
+      .button {
+        background-color: #27ae60;
+        color: #ffffff;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 5px;
+        display: inline-block;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+      }
+      .button:hover {
+        background-color: #219653;
+      }
+      form label {
+        display: block;
+        margin-top: 20px;
+        font-weight: bold;
+        color: #2c3e50;
+        font-size: 18px;
+      }
+      form input[type="email"],
+      form input[type="text"],
+      form select {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #cccccc;
+        border-radius: 5px;
+        margin-top: 5px;
+        box-sizing: border-box;
+      }
+      form button[type="submit"] {
+        background-color: #27ae60;
+        color: #ffffff;
+        border: none;
+        padding: 12px 24px;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+        transition: background-color 0.3s;
+      }
+      form button[type="submit"]:hover {
+        background-color: #219653;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+        margin-top: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="email-container">
+      <header class="header">
+        <h1>HealthyLiving Monthly Newsletter</h1>
+      </header>
+      <main class="content">
+        <h2>Welcome to Our New Edition</h2>
+        <p>
+          Stay updated with the latest health tips, articles, and exclusive
+          promotions.
+        </p>
+        <h2>Featured Article: The Benefits of a Balanced Diet</h2>
+        <p>
+          Discover how a balanced diet can improve your overall health and
+          wellbeing.
+        </p>
+        <a
+          href="https://healthyliving.com/articles/balanced-diet"
+          class="button"
+          aria-label="Read the full article on the benefits of a balanced diet"
+          >Read Full Article</a
+        >
+        <h2>Subscribe for More Updates</h2>
+        <p aria-labelledby="newsletter-signup">
+          Join our newsletter for the latest health tips and exclusive offers.
+        </p>
+        <form action="https://healthyliving.com/subscribe" method="post">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+          <label for="preferences">Preferences:</label>
+          <select id="preferences" name="preferences">
+            <option value="nutrition">Nutrition</option>
+            <option value="exercise">Exercise</option>
+            <option value="wellbeing">Wellbeing</option>
+          </select>
+          <button type="submit">Subscribe</button>
+        </form>
+        <h2>Special Offer</h2>
+        <p>Get 10% off on your first purchase!</p>
+        <img
+          src="https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNHY3Njgwb2JvbGNxd2N3dTA5eTBvbXFxNmhtOWdubDcxcDM1M3VhdCZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/3o6fJ6dOc8NPAgv7FK/giphy.webp"
+          alt="Special Offer"
+        />
+      </main>
+      <footer class="footer">
+        <p>
+          You're receiving this email because you subscribed to HealthyLiving
+          updates.
+        </p>
+        <p>
+          <a href="https://healthyliving.com/unsubscribe">Unsubscribe</a>
+          |
+          <a href="https://healthyliving.com/privacy">Privacy Policy</a>
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
