@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://picsum.photos/id/1001/400/200");
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      .header {
+        background-color: #f8f8f8;
+        text-align: center;
+      }
+      .subscribe-form {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .subscribe-form input,
+      .subscribe-form select,
+      .subscribe-form textarea {
+        padding: 10px;
+        margin: 5px;
+        width: 80%;
+        box-sizing: border-box;
+      }
+      .subscribe-form label {
+        display: block;
+        margin-top: 10px;
+        text-align: left;
+        font-weight: bold;
+      }
+      .subscribe-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      .gender-options,
+      .interest-options {
+        display: flex;
+        justify-content: space-around;
+        margin: 10px 0;
+      }
+      .gender-options label,
+      .interest-options label {
+        margin: 0;
+        display: flex;
+        align-items: center;
+      }
+      .gender-options input,
+      .interest-options input {
+        margin-right: 5px;
+      }
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding: 10px;
+        }
+        .subscribe-form input,
+        .subscribe-form select,
+        .subscribe-form textarea,
+        .subscribe-form button {
+          width: 100%;
+          margin: 5px 0;
+        }
+        .gender-options,
+        .interest-options {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+        td[rowspan="2"] {
+          display: none;
+        }
+        .responsive-table {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+        .responsive-table td {
+          width: 100%;
+          text-align: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <td colspan="3" class="header">
+            <h1>Welcome to the Launch of SmartWatch Pro</h1>
+            <p>Experience the future on your wrist.</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2" class="product-image">
+            <img
+              src="https://picsum.photos/id/1000/200/800"
+              alt="SmartWatch Pro"
+              style="width: 100%"
+            />
+          </td>
+          <td colspan="2">
+            <h2>Product Overview</h2>
+            <p>
+              The SmartWatch Pro is the latest in wearable technology, combining
+              sleek design with cutting-edge features.
+            </p>
+          </td>
+        </tr>
+        <tr class="responsive-table">
+          <td>
+            <h2>Features</h2>
+            <ul>
+              <li>High-resolution display</li>
+              <li>Long battery life</li>
+              <li>Fitness tracking</li>
+              <li>GPS and Navigation</li>
+            </ul>
+          </td>
+          <td>
+            <h2>Customer Reviews</h2>
+            <p>
+              "Absolutely love my new SmartWatch Pro! It's a game-changer." -
+              Jane Doe
+            </p>
+            <p>
+              "Best purchase I've made this year. Highly recommend!" - John
+              Smith
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get the latest updates and offers.</p>
+            <div class="subscribe-form">
+              <form action="https://example.com/subscribe" method="post">
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Enter your name"
+                  required
+                />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Enter your email"
+                  required
+                />
+                <input
+                  type="tel"
+                  name="phone"
+                  placeholder="Enter your phone number"
+                />
+                <label for="variant">Select Product Variant:</label>
+                <select name="variant" id="variant" required>
+                  <option value="standard">Standard</option>
+                  <option value="sport">Sport</option>
+                  <option value="luxury">Luxury</option>
+                </select>
+                <label>Gender:</label>
+                <div class="gender-options">
+                  <label for="male">
+                    <input type="radio" name="gender" value="male" id="male" />
+                    Male
+                  </label>
+                  <label for="female">
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="female"
+                      id="female"
+                    />
+                    Female
+                  </label>
+                  <label for="other">
+                    <input
+                      type="radio"
+                      name="gender"
+                      value="other"
+                      id="other"
+                    />
+                    Other
+                  </label>
+                </div>
+                <label>Interests:</label>
+                <div class="interest-options">
+                  <label for="fitness">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      value="fitness"
+                      id="fitness"
+                    />
+                    Fitness
+                  </label>
+                  <label for="technology">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      value="technology"
+                      id="technology"
+                    />
+                    Technology
+                  </label>
+                  <label for="fashion">
+                    <input
+                      type="checkbox"
+                      name="interests"
+                      value="fashion"
+                      id="fashion"
+                    />
+                    Fashion
+                  </label>
+                </div>
+                <textarea
+                  name="message"
+                  rows="4"
+                  placeholder="Any comments or questions?"
+                ></textarea>
+                <button type="submit">Subscribe</button>
+              </form>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

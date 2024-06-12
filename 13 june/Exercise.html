@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        background-image: url("https://picsum.photos/id/1001/400/200");
+        background-size: cover;
+        margin: 0;
+        padding: 0;
+      }
+      .container {
+        width: 100%;
+        max-width: 600px;
+        margin: auto;
+        background-color: rgba(255, 255, 255, 0.9);
+        padding: 20px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+      td,
+      th {
+        padding: 10px;
+        border: 1px solid #ddd;
+      }
+      .header {
+        background-color: #f8f8f8;
+        text-align: center;
+      }
+      .subscribe-form {
+        text-align: center;
+        margin-top: 20px;
+      }
+      .subscribe-form input,
+      .subscribe-form select,
+      .subscribe-form textarea {
+        padding: 10px;
+        margin: 5px;
+        width: 80%;
+        box-sizing: border-box;
+      }
+      .subscribe-form label {
+        display: block;
+        margin-top: 10px;
+        text-align: left;
+      }
+      .subscribe-form button {
+        padding: 10px 20px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      @media only screen and (max-width: 600px) {
+        .container {
+          padding: 10px;
+        }
+        .subscribe-form input,
+        .subscribe-form select,
+        .subscribe-form textarea,
+        .subscribe-form button {
+          width: 100%;
+          margin: 5px 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <table>
+        <tr>
+          <td colspan="3" class="header">
+            <h1>Welcome to the Launch of SmartWatch Pro</h1>
+            <p>Experience the future on your wrist.</p>
+          </td>
+        </tr>
+        <tr>
+          <td rowspan="2">
+            <img
+              src="https://picsum.photos/id/1000/200/200"
+              alt="SmartWatch Pro"
+              style="width: 100%"
+            />
+          </td>
+          <td colspan="2">
+            <h2>Product Overview</h2>
+            <p>
+              The SmartWatch Pro is the latest in wearable technology, combining
+              sleek design with cutting-edge features.
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <h2>Features</h2>
+            <ul>
+              <li>High-resolution display</li>
+              <li>Long battery life</li>
+              <li>Fitness tracking</li>
+              <li>GPS and Navigation</li>
+            </ul>
+          </td>
+          <td>
+            <h2>Customer Reviews</h2>
+            <p>
+              "Absolutely love my new SmartWatch Pro! It's a game-changer." -
+              Jane Doe
+            </p>
+            <p>
+              "Best purchase I've made this year. Highly recommend!" - John
+              Smith
+            </p>
+          </td>
+        </tr>
+        <tr>
+          <td colspan="3">
+            <h2>Stay Updated</h2>
+            <p>Subscribe to get the latest updates and offers.</p>
+            <div class="subscribe-form"></div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>
